@@ -11,7 +11,7 @@ impl BlockChain {
         self.blocks.push(new_block);
     }
 
-    pub fn new_genesis_block() -> block::Block {
+    fn new_genesis_block() -> block::Block {
         block::Block::new_block("this is genesis block".to_string(), "".to_string())
     }
 
